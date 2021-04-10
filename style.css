@@ -1,0 +1,398 @@
+:root {
+  --black: #333;
+  font-family: 'helvetica', sans-serif;
+}
+
+html {
+  /* font-size: 1.25rem;
+  line-height: 1.875rem; */
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: column;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.nav-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  height: 42px;
+  width: 100%;
+  margin-top: -0.5rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 3.75rem;
+  background-color: white;
+  align-items: center;
+}
+
+.nav-container > ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-site > li {
+  display: flex;
+  white-space: nowrap;
+  flex: 3;
+  font-size: 14.25px;
+  line-height: 1rem;
+  font-weight: bold;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.nav-site > .menu-icons {
+  flex: 1;
+}
+
+.nytimes-title {
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: 'chomsky';
+  font-size: 26px;
+}
+
+.nav-account > li {
+  display: flex;
+  white-space: nowrap;
+  font-size: 14.25px;
+  line-height: 1rem;
+  margin: 0 0.5rem;
+  padding: 4px;
+  cursor: pointer;
+  background-color: #567b95;
+}
+
+.nav-account > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.article-container {
+  display: flex;
+  padding-top: 3.75rem;
+  flex-direction: column;
+}
+
+.article-content {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e2e2e2;
+  flex-direction: column;
+}
+
+.article-content > h1 {
+  font-style: italic;
+}
+
+.social-media {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.social-media > ul {
+  padding-left: 0;
+  width: 600px;
+  list-style-type: none;
+  display: flex;
+}
+
+.social-media > ul > li  {
+  display: flex;
+  margin-right: 1rem;
+}
+
+.social-media > ul > li > a {
+  color: black;
+  font-size: 16px;
+  line-height: 16px;
+  width: 16px;
+}
+
+.bookmark {
+  font-size: 26px !important;
+}
+
+.social-icons {
+  background-color: #eee;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  padding: 0.25rem;
+  border-radius: 100%;
+  border: 1px solid #eee;
+}
+
+.social-icons:hover {
+  background-color: white;
+}
+
+.img-container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 975px;
+  flex-direction: column;
+}
+
+.img-container > img {
+  max-width: 100%;
+}
+
+.img-caption > span {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.img-credit {
+  color: rgba(30, 26, 26, 0.69);
+}
+
+.by-line {
+  width: 600px;
+}
+
+.author {
+  padding: 2rem 0;
+  font-weight: bold;
+}
+
+.date {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.img-grid {
+  display: grid;
+  max-width: 975px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 5px;
+  font-size: 13px;
+}
+
+.item1, .item2, .item3, .item4 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.item5, .item6, .item7, .item8 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.inflation {
+  background-image: url('images/inflation.png');
+  background-size: 100% 100%;
+}
+
+.article-content > figure {
+  padding: 2rem 0;
+  margin: 0;
+  height: 319px;
+}
+
+.article-content > figure > div {
+  height: 100%;
+  display: flex;
+}
+
+.article-content > figure > iframe {
+  width: 100%;
+  height: 100%;
+}
+
+
+.article-content > figure > img {
+  width: 100%;
+  height: 100%;
+}
+
+figcaption {
+  padding: 1rem 0;
+  line-height: 10px;
+  font-size: 10px;
+}
+
+.post-article-links {
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-article-links > a {
+  margin-right: 3rem;
+  padding: 4px 3rem;
+  cursor: pointer;
+  background-color: #567b95;
+  color: white;
+  text-decoration: none;
+}
+
+footer > section {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin-top: -0.5rem;
+  justify-content: center;
+  border-bottom: 1px solid #e2e2e2;
+  margin-bottom: 1rem;
+  background-color: white;
+  align-items: flex-start;
+  margin: 10px auto;
+}
+
+.footer-grids-container {
+  border-top: 1px double black;
+  max-width: 852px;
+  flex-direction: column;
+}
+
+.suggested-news {
+  padding-bottom: 1rem;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.suggested-news > a {
+  border: 1px solid #e2e2e2;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.suggested-news > a > .iconify {
+  width: 30px;
+  height: 30px;
+  float: right;
+  border-radius: 50%;
+}
+
+.suggested-news > a:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px #e2e2e2;
+}
+
+.suggested-news > a:hover > .iconify {
+  color: white;
+  background-color: black;
+}
+
+.suggested-news > a > img {
+  width: 30%;
+}
+
+.editor-picks {
+  border-top: 1px solid black;;
+}
+
+.editor-news {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.editor-news > a {
+  text-decoration: none;
+  color: black;
+}
+
+.editor-news > a:hover {
+  cursor: pointer;
+}
+
+.editor-news > a > img {
+  width: 100%;
+}
+
+.footer-links {
+  border-top: 1px double black;
+  margin-left: 3rem;
+}
+
+.footer-links > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links > ul > li {
+  margin: 10px 0;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.footer-links > ul > li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-links > ul > li > a:hover {
+  cursor: pointer;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+
+.nav-grid > ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 5px;
+}
+
+.nav-grid > ul > li {
+  padding: 0.25rem 0;
+}
+
+.nav-grid > ul > li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.sub-links {
+  border-left: 1px solid #e2e2e2;
+  margin-left: 10px;
+}
